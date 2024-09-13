@@ -1,0 +1,78 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+header {
+    width: 1200px;
+    height: 100px;
+    float: left;
+    background-color: chocolate;
+}
+
+.logo {
+    background-color: gray;
+    width: 200px;
+    height: 100px;
+    float: left;
+}
+
+.menu {
+    float: right;
+    width: 800px;
+    height: 50px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-right: 25px;
+    background-color: brown;
+}
+
+.bodywrap {
+    float: left;
+    width: 1200px;
+    height: 600px;
+}
+
+.image {
+    float: left;
+    width: 1200px;
+    height: 400px;
+    background-color: blanchedalmond;
+}
+
+.contents {
+    float: left;
+    width: 1200px;
+    height: 200px;
+    background-color: burlywood;
+}
+
+footer {
+    float: left;
+    width: 1200px;
+    height: 100px;
+    background-color: chocolate;
+}
+
+.ftlogo {
+    float: left;
+    width: 200px;
+    height: 100px;
+    background-color: gray;
+}
+
+.copyright {
+    float: right;
+    width: 400px;
+    height: 50px;
+    margin-right: 100px;
+    margin-top: 25px;
+    background-color: aquamarine;
+}

@@ -1,0 +1,154 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul, li {
+    list-style: none;
+}
+
+header {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    z-index: 1;
+}
+
+header .box1 {
+    width: 100%;
+    background-color: black;
+    height: 50px;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .box1 a {
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+header .box2 {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+
+header .logo {
+    float: left;
+    width: 300px;
+}
+
+header .menu_wrap {
+    width: 500px;
+}
+
+header .login_wrap {
+    width: 300px;
+}
+
+header .logo a {
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.menu_wrap ul {
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu a {
+    color: white;
+    font-weight: bold;
+}
+
+header .menu {
+    float: left;
+}
+
+.login_wrap ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+header .login a{
+    color: white;
+    font-weight: bold;
+}
+
+.one {
+    position: relative;
+    top: 50px;
+    height: 850px;
+    overflow: hidden;
+    display: flex;
+}
+
+.one img {
+    width: 100%;
+}
+
+.two {
+    padding: 150px 250px;
+    padding-bottom: 0;
+}
+
+.two .main_text {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    padding: 5px 0;
+}
+
+.two .sub_text {
+    font-size: 20px;
+    color: rgb(132, 132, 132);
+    padding-bottom: 30px;
+}
+
+.two .contents {
+    width: 100%;
+    height: 480px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.three {
+    padding: 10px 250px;
+}
+
+.three .contents {
+    display: flex;
+    justify-content: space-between;
+}
+
+.three .box img {
+    width: 280px;
+}
+
+.three .box .main_text {
+    font-size: 12px;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+.three .box .sub_text {
+    font-size: 15px;
+}
+
+.four {
+    height: 100px;
+}

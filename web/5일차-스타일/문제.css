@@ -1,0 +1,97 @@
+body {
+    background-color: pink;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+div {
+    margin-bottom: 10px;
+}
+
+.blue {
+    width: 300px;
+    height: 200px;
+    border: 10px solid blue;
+    box-sizing: border-box;
+}
+
+.dashed {
+    width: 500px;
+    height: 200px;
+    border: 10px dashed red;
+    box-sizing: border-box;
+}
+
+.solid {
+    width: 500px;
+    height: 200px;
+    border: 10px solid black;
+    box-sizing: border-box;
+}
+
+.box-1 {
+    width: 500px;
+    float: left;
+}
+
+.box {
+    float: right;
+    width: 300px;
+    margin-right: 200px;
+}
+
+.naver {
+    font-weight: bold;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 20px;
+    padding-top: 140px;
+    padding-bottom: 140px;
+    box-sizing: border-box;
+    border: 10px solid rgb(31, 246, 70);
+    background-color: rgb(136, 239, 155);
+}
+
+.naver:hover {
+    opacity: 0.7;
+}
+
+.youtube:hover {
+    opacity: 0.7;
+}
+.kakao:hover {
+    opacity: 0.7;
+}
+
+.youtube {
+    font-weight: bold;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 20px;
+    padding-top: 140px;
+    padding-bottom: 140px;
+    box-sizing: border-box;
+    border: 10px solid rgb(255, 0, 0);
+    background-color: rgb(239, 136, 136);
+}
+
+.kakao {
+    font-weight: bold;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 20px;
+    padding-top: 140px;
+    padding-bottom: 140px;
+    box-sizing: border-box;
+    border: 10px solid rgb(221, 255, 0);
+    background-color: rgb(236, 239, 136);
+}

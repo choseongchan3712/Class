@@ -1,0 +1,165 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to bottom, rgb(111, 190, 243), rgb(255, 145, 227));
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  width: 500px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 0;
+  border: 1px solid rgba(0, 0, 0, 1);
+  transition: 1s ease-in-out;
+}
+
+.box:hover {
+  border: 1px solid rgba(0, 0, 0, 0);
+  transform: scale(1.1);
+}
+
+.box::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to bottom, red, orange, green, blue, purple);
+  opacity: 0;
+}
+
+.line {
+  position: absolute;
+  z-index: 1;
+}
+
+.line1 {
+  width: 100%;
+  transform: scaleX(0);
+  height: 10px;
+  background-color: tomato;
+  top: 0;
+  left: 0;
+}
+
+.line2 {
+  width: 10px;
+  height: 100%;
+  transform: scaleY(0);
+  background-color: tomato;
+  top: 0;
+  right: 0;
+}
+
+.line3 {
+  width: 100%;
+  height: 10px;
+  transform: scaleX(0);
+  background-color: tomato;
+  bottom: 0;
+  right: 0;
+}
+
+.line4 {
+  width: 10px;
+  height: 100%;
+  transform: scaleY(0);
+  background-color: tomato;
+  bottom: 0;
+  left: 0;
+}
+
+.title {
+  position: relative;
+  z-index: 4;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  opacity: 0;
+}
+
+.box:hover .line1 {
+  transform: scaleX(1);
+  transition: transform 1s ease-in-out;
+  transform-origin: left;
+}
+
+.box:not(:hover) .line1 {
+  transform: scaleX(0);
+  transition: transform 1s ease-in-out;
+  transition-delay: 2s;
+  transform-origin: right;
+}
+
+.box:hover .line2 {
+  transform: scaleY(1);
+  transition: transform 1s ease-in-out;
+  transition-delay: 1s;
+  transform-origin: top;
+}
+.box:not(:hover) .line2 {
+  transform: scaleY(0);
+  transition: transform 1s ease-in-out;
+  transition-delay: 3s;
+  transform-origin: bottom;
+}
+
+.box:hover .line3 {
+  transform: scaleX(1);
+  transition: transform 1s ease-in-out;
+  transition-delay: 2s;
+  transform-origin: right;
+}
+.box:not(:hover) .line3 {
+  transform: scaleX(0);
+  transition: transform 1s ease-in-out;
+  transition-delay: 4s;
+  transform-origin: left;
+}
+
+.box:hover .line4 {
+  transform: scaleY(1);
+  transition: transform 1s ease-in-out;
+  transition-delay: 3s;
+  transform-origin: bottom;
+}
+.box:not(:hover) .line4 {
+  transform: scaleY(0);
+  transition: transform 1s ease-in-out;
+  transition-delay: 5s;
+  transform-origin: top;
+}
+
+.box:hover::before {
+  opacity: 1;
+  transition: 1s ease-in-out;
+  transition-delay: 4s;
+}
+.box:not(:hover)::before {
+  opacity: 0;
+  transition: 1s ease-in-out;
+  transition-delay: 1s;
+}
+
+.box:hover .title {
+  opacity: 1;
+  transition: 1s ease-in-out;
+  transition-delay: 5s;
+}
+.box:not(:hover) .title {
+  opacity: 0;
+  transition: 1s ease-in-out;
+}

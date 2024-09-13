@@ -1,0 +1,36 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.con {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.con h3 {
+    font-size: 1.625em;
+    font-weight: 900;
+    margin-top: 10px;
+}
+
+.con p {
+    font-size: 1em;
+    margin-top: 5px;
+}
+
+@media screen and (max-width: 500px) {
+    body {
+        font-size: 12px;
+    }
+}

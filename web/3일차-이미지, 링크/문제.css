@@ -1,0 +1,56 @@
+body {
+    background-color: aquamarine;
+}
+
+h1 {
+    background-color: pink;
+    margin-top: 400px;
+}
+
+
+u {
+    color: aquamarine;
+}
+
+i {
+    color: red;
+}
+
+sup {
+    color: blueviolet;
+}
+
+sub {
+    color: chartreuse;
+}
+
+h1:hover {
+    background-color: white;
+}
+
+.yes {
+    margin-left: 200px;
+    margin-top: 50px;
+    float: left;
+    width: 200px;
+    height: 25px;
+    background-color: beige;
+    line-height: 25px;
+    text-align: center;
+}
+
+.no {
+    margin-left: 200px;
+    margin-top: 50px;
+    float: left;
+    width: 200px;
+    height: 25px;
+    background-color: beige;
+    line-height: 25px;
+    text-align: center;
+}
+
+a {
+    text-align: center;
+    text-decoration: none;
+}

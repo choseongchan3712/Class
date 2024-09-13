@@ -1,0 +1,25 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* 
+퍼센트 변경 공식
+=> 변경 값 / 상위 부모의 값 * 100
+*/
+
+.wrap {
+    /* width: 1400px; */
+    width: 72.91666%;
+    height: 500px;
+    background-color: lightgray;
+    margin: 0 auto;
+}
+
+.con {
+    width: 42.85714%;
+    height: 400px;
+    background-color: salmon;
+    margin: 0 auto;
+}

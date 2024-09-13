@@ -1,0 +1,14 @@
+.box {
+    width: 600px;
+    height: 500px;
+    background-color: lightgoldenrodyellow;
+    background-image: url(https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMzA5MTNfNTEg%2FMDAxNjk0NTgyNTk0NTYz.grwhEuHPQdGPn1CqaFkILkDEIJCyRnC2eMRIjT7zUH8g.37jVh6IbO3sgv0l4vaC5x6103D-SrXJQsoCNFg-qoqMg.JPEG.shaellina%2F20230815%25A3%25DF183228.jpg&type=ofullfill340_600_png);
+    background-repeat: no-repeat;
+    /* background-size: 100px 400px; */
+    /* background-size: 50% 20%; */
+    /* background-size: cover; */
+    /* 이미지 비율에 맞춰 가득 채우지만, 잘리는 부분이 생길 수 있음 */
+    /* background-size: contain; */
+    background-position: center;
+    background-size: cover;
+}

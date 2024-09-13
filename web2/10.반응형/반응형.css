@@ -1,0 +1,46 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.pc {
+    width: 1400px;
+    height: 300px;
+    border: 5px solid red;
+    font-size: 50px;
+    text-align: center;
+}
+
+.tab {
+    width: 1200px;
+    height: 300px;
+    border: 5px solid blue;
+    font-size: 50px;
+    text-align: center;
+}
+
+.mo {
+    width: 768px;
+    height: 300px;
+    border: 5px solid green;
+    font-size: 50px;
+    text-align: center;
+}
+
+@media screen and (max-width: 1400px){
+    .pc {
+        width: 90%;
+        background-color: red;
+    }
+
+    .tab {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .mo {
+        width: 30%;
+    }    
+}

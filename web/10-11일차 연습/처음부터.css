@@ -1,0 +1,93 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+html, body {
+    height: 100%;
+}
+
+.header {
+    width: 95%;
+    height: 120px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    height: 50px;
+    top: 35px;
+}
+
+.logo a {
+    height: 50px;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.search {
+    height: 30px;
+    position: absolute;
+    right: 200px;
+    top: 45px;
+}
+
+.search img {
+    height: 30px;
+}
+
+.menu {
+    width: 160px;
+    background-color: #ff4200;
+    font-size: 17px;
+    font-weight: 600;
+    color: white;
+    height: 55px;
+    position: absolute;
+    border-radius: 30px;
+    right: 10px;
+    top: 32.5px;
+}
+
+.text {
+    position: absolute;
+    height: 35px;
+    line-height: 35px;
+    top: 10px;
+    width: 160px;
+    text-align: center;
+}
+
+.bodywrap {
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 50px;
+    height: 2000px;
+}
+
+.bigbox  {
+    width: 45%;
+    padding-bottom: 45%;
+    border-radius: 10%;
+    overflow: hidden;
+    background-image: url('https://static.impact.career/web/2024/05/27163317/%ED%99%882_700px.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+
+.bigbox text {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    z-index: 1;
+}

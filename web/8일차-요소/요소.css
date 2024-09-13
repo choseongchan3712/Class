@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    width: 200px;
+    height: 200px;
+    background-color: lightgray;
+    font-size: 30px;
+    border: 2px solid red;
+    display: inline;
+}
+
+
+a {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(163, 36, 125);
+    font-size: 30px;
+    border: 2px solid mediumturquoise;
+    display: block;
+}
+
+

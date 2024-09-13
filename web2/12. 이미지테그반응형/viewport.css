@@ -1,0 +1,29 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* .box {
+    width: 30vw;
+    height: 30vw;
+    background-color: salmon;
+    font-size: 10vw;
+} */
+
+.con_wrap {
+    /* width: 1200px; */
+    /* width: 62.5%; */
+    width: 62.5vw;
+    background-color: lightgray;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.con {
+    /* width: 380px; */
+    width: 19.79166vw;
+    height: 400px;
+    background-color: gray;
+}
