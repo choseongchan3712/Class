@@ -1,0 +1,31 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.con_wrap {
+    max-width: 1400px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.con {
+    width: 32%;
+}
+
+.bg {
+    height: 450px;
+    background-color: violet;
+}
+
+.con h3 {
+    font-size: 20px;
+}
+
+.active {
+    height: 450px;
+    background-color: salmon;
+}
