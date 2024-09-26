@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            perspective: 500px;
+        }
+
+        .con_wrap {
+            max-width: 1400px;
+            width: 100%;
+            margin: 100px auto;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .con {
+            width: 32%;
+            height: 500px;
+            background-color: pink;
+            font-size: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 0.25s ease-in-out;
+        }
+
+        .active {
+            background-color: red;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="con_wrap">
+        <div class="con">1</div>
+        <div class="con">2</div>
+        <div class="con">3</div>
+    </div>
+
+    <script src="./이벤트위임.js"></script>
+</body>
+</html>

@@ -2,6 +2,7 @@
 
 const bgE1 = document.querySelector('.bg');
 
+
 const bgHandler = () => {
     // bgE1.classList.add('active');
     // bgE1.classList.remove('bg');
