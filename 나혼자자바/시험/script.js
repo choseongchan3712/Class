@@ -53,8 +53,20 @@ const addUserList = () => {
     likeEl.classList.add('like');
     contentsEl.append(likeEl);
     likeEl.innerHTML = '<i class="fa-regular fa-heart"></i>';
+
+    const countEl = document.createElement('div');
+    countEl.classList.add('count');
+    countEl.innerHTML = 0;
+    likeEl.append(countEl);
 }
 
 for (i = 0; i < userList.length; i++) {
     addUserList();
 }
+
+containerEl.addEventListener('click', (e) => {
+    if (e.target.classList.contains('fa-heart')) {
+        e.target.classList.add('active');
+        e.target.parentNode.querySelector('.count').innerText++;
+    }
+})
