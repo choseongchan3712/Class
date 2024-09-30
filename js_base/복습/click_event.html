@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>click_event</title>
+    <style>
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .wrap {
+            width: 100%;
+            height: 100vh;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .wrap_active {
+            background-color: gray;
+        }
+
+        .color_wrap {
+            width: 80%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .box {
+            width: 20vw;
+            height: 20vw;
+            background-color: salmon;
+            transition: 0.25s ease-in-out;
+        }
+
+        .active {
+            border-top-left-radius: 50px;
+            background-color: aqua;
+            transform: scale(1.2);
+        }
+
+        .toggle {
+            width: 150px;
+            height: 50px;
+            background-color: rgb(243, 243, 243);
+            border-radius: 50px;
+            position: relative;
+            box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+        }
+
+        .circle {
+            width: 45px;
+            height: 45px;
+            position: absolute;
+            background-color: white;
+            border-radius: 45px;
+            left: 2.5px;
+            top: 2.5px;
+        }
+
+        .toggle_active {
+            background-color: rgb(88, 255, 88);
+        }
+
+        .toggle.toggle_active .circle {
+            left: 102.5px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="wrap">
+        <div class="color_wrap">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+
+        <div class="toggle">
+            <div class="circle"></div>
+        </div>
+    </div>
+
+    <script src="./click_event.js"></script>
+    
+</body>
+</html>
