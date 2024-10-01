@@ -25,7 +25,7 @@ const userList = [
     
 ]
 
-const addUserList = () => {
+const addUserList = (i) => {
     const contentsEl = document.createElement('div');
     contentsEl.classList.add('contents');
     containerEl.append(contentsEl);
@@ -61,12 +61,20 @@ const addUserList = () => {
 }
 
 for (i = 0; i < userList.length; i++) {
-    addUserList();
+    addUserList(i);
 }
+
+const countActive = document.querySelector('.count_active');
 
 containerEl.addEventListener('click', (e) => {
     if (e.target.classList.contains('fa-heart')) {
-        e.target.classList.add('active');
-        e.target.parentNode.querySelector('.count').innerText++;
+        e.target.classList.toggle('active');
+        // e.target.classList.add('active');
+        e.target.parentNode.querySelector('.count').innerText = 0;
+        e.target.parentNode.querySelector('.count').classList.toggle('count_active');
+        e.target.parentNode.querySelector('.count_active').innerText++;
+        // e.target.parentNode.querySelector('.count').innerText++;
+        
     }
 })
+
