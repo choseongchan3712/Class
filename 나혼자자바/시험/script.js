@@ -1,4 +1,18 @@
 const containerEl = document.querySelector('.container');
+const hamBtn = document.querySelector('.fa-bars');
+const sideMenu = document.querySelector('.side_menu');
+const closeBtn = document.querySelector('.fa-xmark');
+
+hamBtn.addEventListener('click', () => {
+    sideMenu.classList.add('menu_active');
+});
+
+closeBtn.addEventListener('click', () => {
+    sideMenu.classList.remove('menu_active');
+});
+
+
+
 
 const userList = [
     {

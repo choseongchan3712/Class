@@ -1,13 +1,106 @@
 @import url(./reset.css);
 
 .wrap {
-    width: 100%;
+    width: 600px;
     position: relative;
     z-index: 0;
-    padding: 5px 0;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+header {
+    position: relative;
+    z-index: 990;
+    width: 600px;
+    height: 80px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    padding: 0 10px;
+    background-color: rgb(255, 62, 94);
+    margin-bottom: 10px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.fa-bars {
+    font-size: 25px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+}
+
+.side_menu {
+    position: absolute;
+    z-index: 991;
+    right: -600px;
+    top: 0;
+    width: 600px;
+    height: 100%;
+    background-color: rgb(255, 215, 221);
+    opacity: 0;
+    transition: 0.25s ease-in-out;
+}
+
+.menu_active {
+    transform: translateX(-600px);
+    opacity: 1;
+}
+
+.menu_header {
+    position: relative;
+    z-index: 992;
+    width: 600px;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    background-color: salmon;
+    margin-bottom: 50px;
+}
+
+.menu_logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.menu_title {
+    position: relative;
+    z-index: 992;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.title {
+    height: 40px;
+    margin-bottom: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    border-bottom: 3px solid black;
+    cursor: pointer;
+}
+
+.fa-xmark {
+    font-size: 25px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: black;
 }
 
 .container {
@@ -92,6 +185,7 @@
     font-size: 20px;
     color: gray;
     margin-right: 10px;
+    cursor: pointer;
 }
 
 .active {
