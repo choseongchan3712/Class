@@ -1,61 +1,105 @@
-const users = [
-    {
-        id: 0,
-        avataUrl: "https://cdn.pixabay.com/photo/2023/03/21/20/01/otter-7868090_640.jpg",
-        userName: "user 1",
-        imgUrl: "https://cdn.pixabay.com/photo/2022/11/22/13/21/otter-7609666_640.jpg"
-    },
+const containerEl = document.querySelector('.container');
+const hamBtn = document.querySelector('.fa-bars');
+const sideMenu = document.querySelector('.side_menu');
+const closeBtn = document.querySelector('.fa-xmark');
+const isClicked = true;
+
+// hamBtn.addEventListener('click', () => {
+//     if(isClicked === true) {
+//     sideMenu.classList.add('menu_active');
+//     isClicked = false;
+// }   else if(isClicked === false) {
+//     sideMenu.classList.remove('menu_active');
+//     isClicked = true;
+// }
+// });
+
+hamBtn.addEventListener('click', () => {
+    sideMenu.classList.add('menu_active');
+});
+
+closeBtn.addEventListener('click', () => {
+    sideMenu.classList.remove('menu_active');
+});
+
+
+
+
+const userList = [
     {
         id: 1,
-        avataUrl: "https://cdn.pixabay.com/photo/2024/04/23/02/43/ai-generated-8713812_640.png",
-        userName: "user 2",
-        imgUrl: "https://cdn.pixabay.com/photo/2022/08/27/12/20/otter-7414367_640.jpg"
+        userProfile: 'https://cdn.pixabay.com/photo/2023/03/21/20/01/otter-7868090_640.jpg',
+        userProfileAlt: 'profile_img',
+        contentsImg: 'https://cdn.pixabay.com/photo/2022/11/22/13/21/otter-7609666_640.jpg',
+        contentsImgAlt: 'contents_img'
     },
     {
         id: 2,
-        avataUrl: "https://cdn.pixabay.com/photo/2018/03/02/22/27/sea-otter-3194446_640.jpg",
-        userName: "user 3",
-        imgUrl: "https://cdn.pixabay.com/photo/2014/06/01/11/34/otter-359539_640.jpg"
+        userProfile: 'https://cdn.pixabay.com/photo/2024/04/23/02/43/ai-generated-8713812_640.png',
+        userProfileAlt: 'profile_img',
+        contentsImg: 'https://cdn.pixabay.com/photo/2022/08/27/12/20/otter-7414367_640.jpg',
+        contentsImgAlt: 'contents_img'
     },
-];
+    {
+        id: 3,
+        userProfile: 'https://cdn.pixabay.com/photo/2018/03/02/22/27/sea-otter-3194446_640.jpg',
+        userProfileAlt: 'profile_img',
+        contentsImg: 'https://cdn.pixabay.com/photo/2014/06/01/11/34/otter-359539_640.jpg',
+        contentsImgAlt: 'contents_img'
+    },
+    
+]
 
-const wrapEl = document.querySelector('.wrap');
-const avataAll = document.querySelectorAll('.avata');
-const usernameAll = document.querySelectorAll('.username');
-const bgAll = document.querySelectorAll('.bg');
+const addUserList = (i) => {
+    const contentsEl = document.createElement('div');
+    contentsEl.classList.add('contents');
+    containerEl.append(contentsEl);
 
-for (i = 0; i < users.length; i++) {
-    avataAll[i].innerHTML = `<img src="${users[i].avataUrl}" alt="avatar">`;
-    usernameAll[i].innerHTML = users[i].userName;
-    bgAll[i].innerHTML = `<img src="${users[i].imgUrl}">`;
+    const userEl = document.createElement('div');
+    userEl.classList.add('user');
+    contentsEl.append(userEl);
+
+    const profileEl = document.createElement('div');
+    profileEl.classList.add('profile');
+    profileEl.innerHTML = `<img src="${userList[i].userProfile}" alt="${userList[i].userProfileAlt}">`;
+    userEl.append(profileEl);
+
+    const userIdEl = document.createElement('div');
+    userIdEl.classList.add('user_id');
+    userIdEl.innerHTML = `user ${userList[i].id}`;
+    userEl.append(userIdEl);
+    
+    const contentsImgEl = document.createElement('div');
+    contentsImgEl.classList.add('contents_img');
+    contentsEl.append(contentsImgEl);
+    contentsImgEl.innerHTML = `<img src="${userList[i].contentsImg}" alt="${userList[i].contentsImgAlt}">`;
+
+    const likeEl = document.createElement('div');
+    likeEl.classList.add('like');
+    contentsEl.append(likeEl);
+    likeEl.innerHTML = '<i class="fa-regular fa-heart"></i>';
+
+    const countEl = document.createElement('div');
+    countEl.classList.add('count');
+    countEl.innerHTML = 0;
+    likeEl.append(countEl);
 }
 
+for (i = 0; i < userList.length; i++) {
+    addUserList(i);
+}
 
-const heartHandler = (e) => {
-    if(e.target.classList.contains('fa-regular')){
-        e.target.parentNode.innerHTML = `<i class="fa-solid fa-heart"></i>`;
-    }else if(e.target.classList.contains('fa-solid')){
-        e.target.parentNode.innerHTML = `<i class="fa-regular fa-heart"></i>`;
+const countActive = document.querySelector('.count_active');
+
+containerEl.addEventListener('click', (e) => {
+    if (e.target.classList.contains('fa-heart')) {
+        e.target.classList.toggle('active');
+        // e.target.classList.add('active');
+        e.target.parentNode.querySelector('.count').innerText = 0;
+        e.target.parentNode.querySelector('.count').classList.toggle('count_active');
+        e.target.parentNode.querySelector('.count_active').innerText++;
+        // e.target.parentNode.querySelector('.count').innerText++;
+        
     }
-};
-
-
-wrapEl.addEventListener('click', heartHandler);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+})
 
