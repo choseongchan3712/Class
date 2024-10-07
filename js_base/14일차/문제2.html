@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.progress {
+    height: 10px;
+    background-color: lightgray;
+}
+
+.bar {
+    height: 100%;
+    width: 0%;
+    background-color: rgb(73, 73, 255);
+    transition: 0.25s;
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section h3{
+    font-size: 50px;
+}
+
+.section_1 {
+    background-color: lightsalmon;
+}
+
+.section_2 {
+    padding: 100px 0;
+    display: block;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 30px;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.title_active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.con_wrap {
+    padding: 0 250px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.con {
+    width: 32%;
+    height: 500px;
+    background-color: lightgray;
+}
+
+.section_3 {
+    height: 700px;
+    background-color: lightgray;
+}
+
+    </style>
+</head>
+<body>
+
+    <div class="wrap">
+        <header>
+            <div class="progress">
+                <div class="bar"></div>
+            </div>
+        </header>
+
+        <section class="section_1">
+            <h3>section</h3>
+        </section>
+
+        <section class="section_2">
+            <h3 class="title">section title</h3>
+            <div class="con_wrap">
+                <div class="con"></div>
+                <div class="con"></div>
+                <div class="con"></div>
+            </div>
+        </section>
+
+        <section class="section_3">
+            <h3>section</h3>
+        </section>
+    </div>
+    
+
+    <script>
+
+        const barEl = document.querySelector('.bar');
+        const wrapEl = document.querySelector('.wrap');
+
+        const scrollHandler = () => {
+            const pageY = pageYOffset;
+            const percent = (pageY / (wrapEl.offsetHeight - window.innerHeight)) * 100;
+            barEl.style.width = `${percent}%`;
+        }
+
+        window.addEventListener("scroll", scrollHandler);
+
+    </script>
+</body>
+</html>
