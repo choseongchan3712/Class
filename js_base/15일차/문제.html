@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        form {
+            max-width: 450px;
+            width: 100%;
+            margin: 100px auto;
+            border: 1px solid #dbdbdb;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        form h3 {
+            font-size: 50px;
+            margin-bottom: 30px;
+        }
+
+        input {
+            all: unset;
+            width: 80%;
+            height: 30px;
+            margin-bottom: 20px;
+            border: 1px solid #dbdbdb;
+            border-radius: 20px;
+            padding: 10px;
+        }
+
+        button {
+            width: 80%;
+            height: 30px;
+            padding: 10px;
+            margin-bottom: 20px;
+            cursor: pointer;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid rgba(0, 0, 0, 0);
+            border-radius: 20px;
+            background-color: rgb(255, 160, 160);
+        }
+        .error {
+            width: 80%;
+            height: 30px;
+            font-size: 18px;
+            color: rgb(255, 99, 99);
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <form>
+        <h3>LOGIN</h3>
+        <input type="text" placeholder="ID" class="id">
+        <input type="password" placeholder="Password" class="password">
+        <div class="error"></div>
+        <button>로그인</button>
+    </form>
+    
+
+
+    <script src="./문제.js"></script>
+</body>
+</html>
