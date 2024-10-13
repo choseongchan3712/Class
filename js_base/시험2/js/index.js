@@ -347,15 +347,6 @@ const likeHandler = (e) => {
 
 contentsWrapEl.addEventListener("click", likeHandler);
 
-// const lookMoreHandler = (e) => {
-//   if(e.target.classList.contains('look_more') || e.target.classList.contains('fa-bars') || e.target.classList.contains('look_more_text')) {
-//     const darkWrapEl = document.querySelector('.dark_wrap');
-//     darkWrapEl.classList.toggle('active');
-//   }
-// }
-
-// wrapEl.addEventListener("click", lookMoreHandler)
-
 const isDark = localStorage.getItem("DARK_MODE");
 
 const toggleHandler = (e) => {
