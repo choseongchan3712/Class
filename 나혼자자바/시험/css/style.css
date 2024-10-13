@@ -196,3 +196,42 @@ header {
 .count {
     font-weight: bold;
 }
+
+.comment_wrap {
+    width: 100%;
+}
+
+.comment_wrap form {
+    width: 100%;
+    height: 50px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.comment_input {
+    all: unset;
+    width: 90%;
+}
+
+.comment_button {
+    all: unset;
+    width: 10%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.comment_area {
+    width: 100%;
+    padding: 10px;
+}
+
+.comments {
+    width: 100%;
+    padding: 5px;
+    cursor: pointer;
+}

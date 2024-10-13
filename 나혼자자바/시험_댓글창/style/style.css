@@ -226,6 +226,7 @@ form {
   align-items: center;
   justify-content: space-around;
   margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 input {
@@ -260,7 +261,6 @@ input {
   align-items: flex-start;
   justify-content: space-around;
   width: 95%;
-  height: 90px;
   padding: 10px;
   border-bottom: 1px solid #dbdbdb;
   margin-bottom: 10px;
@@ -273,4 +273,43 @@ input {
 .comment_icon {
   display: flex;
   align-items: center;
+}
+
+.comment_icon .user_id {
+  margin-right: 10px;
+}
+
+.comment_icon .delete_button {
+  cursor: pointer;
+}
+
+.fa-trash-can {
+  font-size: 15px;
+  color: gray;
+}
+
+.comment_value {
+  height: 30px;
+  line-height: 30px;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.reply {
+  height: 30px;
+  line-height: 30px;
+  font-size: 12px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.reply_button {
+  all: unset;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #dbdbdb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
 }

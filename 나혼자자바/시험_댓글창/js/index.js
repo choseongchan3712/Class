@@ -167,13 +167,82 @@ containerEl.addEventListener('submit', (e) => {
       userIdEl.classList.add('user_id');
       userIdEl.innerHTML = `user ${myInfo.id}`;
       commentIconEl.append(userIdEl);
+      
+      const deleteEl = document.createElement('div');
+      deleteEl.classList.add('delete_button');
+      deleteEl.innerHTML = '<i class="fa-regular fa-trash-can"></i>';
+      commentIconEl.append(deleteEl);
+      deleteEl.addEventListener("click", (event) => {
+        const commentEl = event.target.parentNode.parentNode.parentNode;
+        commentEl.remove();
+      })
 
       const commentText = document.createElement('div');
-      commentText.innerText = `↳ ${commentValue}`;
+      commentText.innerHTML = `<div class="comment_value">↳ ${commentValue}</div> <div class="reply">댓글달기</div>`;
+      contentsEl.addEventListener("click", (event) => {
+        if(event.target.classList.contains('reply')) {
+          const contentsBox = event.target.parentNode.parentNode;
+
+          const replyFormEl = document.createElement('form');
+          replyFormEl.classList.add('reply_form');
+          replyFormEl.innerHTML = '<input type="text" class="reply_input" placeholder="댓글을 작성하시오">';
+
+          const replyButtonEl = document.createElement('button');
+          replyButtonEl.classList.add('reply_button');
+          replyButtonEl.innerHTML = '<i class="fa-regular fa-paper-plane"></i>';
+
+          replyFormEl.append(replyButtonEl);
+          contentsBox.append(replyFormEl);
+        }
+      })
       
       commentBox.append(commentIconEl);
       commentBox.append(commentText);
       contentsEl.append(commentBox);
+      e.target.style.display = "none";
+      e.target.reset();
+      const iconEl = e.target.parentNode.querySelector('.fa-comment');
+      iconEl.classList.remove('create_form');
+    }
+  }
+
+  if (e.target.classList.contains('reply_form')) {
+    const commentBoxEl = e.target.parentNode;
+    const replyValue = e.target.querySelector('.reply_input').value;
+
+    if (replyValue) {
+      const commentBox = document.createElement('div');
+      commentBox.classList.add('comment_box');
+
+      const commentIconEl = document.createElement('div');
+      commentIconEl.classList.add('comment_icon');
+
+      const profileEl = document.createElement('div');
+      profileEl.classList.add('profile');
+      profileEl.innerHTML = `<img src="${myInfo.userProfile}" alt="${myInfo.userProfileAlt}">`;
+      commentIconEl.append(profileEl);
+
+      const userIdEl = document.createElement('div');
+      userIdEl.classList.add('user_id');
+      userIdEl.innerHTML = `user ${myInfo.id}`;
+      commentIconEl.append(userIdEl);
+      
+      const deleteEl = document.createElement('div');
+      deleteEl.classList.add('delete_button');
+      deleteEl.innerHTML = '<i class="fa-regular fa-trash-can"></i>';
+      commentIconEl.append(deleteEl);
+      deleteEl.addEventListener("click", (event) => {
+        const commentEl = event.target.parentNode.parentNode.parentNode;
+        commentEl.remove();
+      })
+
+      const commentText = document.createElement('div');
+      commentText.innerHTML = `<div class="comment_value">↳ ${replyValue}</div>`;
+      
+      commentBox.append(commentIconEl);
+      commentBox.append(commentText);
+      commentBoxEl.append(commentBox);
+      e.target.style.display = "none";
       e.target.reset();
     }
   }
