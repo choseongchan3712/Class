@@ -1,25 +1,22 @@
-import logo from "./logo.svg";
-import "./App.css";
+// import Header from "./components/ex01/Header";
+// import Section from "./components/ex01/Section";
+// import Footer from "./components/ex01/Footer";
+import { Menus_1, Menus_2 } from "./components/ex01/Menus";
 
-function App() {
+const App = () => {
+  // return 반드시 존재해야함
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    //Fragment 태그
+    <>
+      {/* <Header></Header>
+      <Section></Section>
+      <Footer></Footer> */}
+      {/* <br /> ssssf*/}
+
+      <Menus_1></Menus_1>
+      <Menus_2></Menus_2>
+    </>
   );
-}
+};
 
 export default App;
