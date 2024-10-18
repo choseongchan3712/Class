@@ -2,7 +2,8 @@
 // import Section from "./components/ex01/Section";
 // import Footer from "./components/ex01/Footer";
 // import { Menus_1, Menus_2 } from "./components/ex01/Menus";
-import PropsEx from "./components/ex02/PropsEx";
+// import PropsEx from "./components/ex02/PropsEx";
+import Ex03 from "./components/ex03/Ex03";
 
 const App = () => {
   // return 반드시 존재해야함
@@ -18,8 +19,10 @@ const App = () => {
       <Menus_2></Menus_2> */}
       {/* 1일차 */}
 
-      <PropsEx></PropsEx>
+      {/* <PropsEx></PropsEx> */}
+      {/* 2일차 */}
 
+      <Ex03></Ex03>
     </>
   );
 };
