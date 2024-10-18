@@ -10,4 +10,4 @@ const Ex03 = () => {
     );
 };
 
-export default Ex03
+export default Ex03 
