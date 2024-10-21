@@ -1,4 +1,4 @@
-import "./style.css";
+// import "./style.css";
 import Header from "./components/Header";
 // import Box from "./components/Box";
 import {Wrap1, Wrap2, Wrap3, Wrap4, Wrap5, Wrap6, Wrap7} from "./components/Wrap";

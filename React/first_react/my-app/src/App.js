@@ -3,7 +3,10 @@
 // import Footer from "./components/ex01/Footer";
 // import { Menus_1, Menus_2 } from "./components/ex01/Menus";
 // import PropsEx from "./components/ex02/PropsEx";
-import Ex03 from "./components/ex03/Ex03";
+// import Ex03 from "./components/ex03/Ex03";
+// import Ex04 from "./components/ex04/Ex04";
+// import Ex04 from "./components/ex04/Ex04";
+import { Practice } from "./components/ex04/Practice";
 
 const App = () => {
   // return 반드시 존재해야함
@@ -22,7 +25,9 @@ const App = () => {
       {/* <PropsEx></PropsEx> */}
       {/* 2일차 */}
 
-      <Ex03></Ex03>
+      {/* <Ex03></Ex03> */}
+      {/* <Ex04></Ex04> */}
+      <Practice></Practice>
     </>
   );
 };
