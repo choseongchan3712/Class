@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEllipsis } from "@fortawesome/free-solid-svg-icons";
-import { faBackward } from "@fortawesome/free-solid-svg-icons";
-import { faPause } from "@fortawesome/free-solid-svg-icons";
-import { faForward } from "@fortawesome/free-solid-svg-icons";
+
+import TimerWrapEl from "./components/TimerWrapEl";
 import styled from "styled-components";
+import { ButtonWrapEl } from "./components/ButtonWrapEl";
 
 const Wrap = styled.div`
   width: 100%;
@@ -60,28 +60,7 @@ const BarWrap = styled.div`
   }
 `;
 
-const TimerWrap = styled.div`
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 10px;
-  color: gray;
-`;
 
-const ButtonWrap = styled.div`
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 30px;
-  i {
-    font-size: 40px;
-  }
-  svg {
-    font-size: 40px;
-  }
-`;
 
 const SoundConWrap = styled.div`
   width: 100%;
@@ -130,16 +109,8 @@ export const Practice = () => {
         <BarWrap>
           <div className="bar"></div>
         </BarWrap>
-        <TimerWrap>
-          <div className="now">1:45</div>
-          <div className="logo">logo</div>
-          <div className="end">3:45</div>
-        </TimerWrap>
-        <ButtonWrap>
-          <FontAwesomeIcon icon={faBackward} />
-          <FontAwesomeIcon icon={faPause} />
-          <FontAwesomeIcon icon={faForward} />
-        </ButtonWrap>
+        <TimerWrapEl></TimerWrapEl>
+        <ButtonWrapEl></ButtonWrapEl>
         <SoundConWrap>
           <i class="fa-solid fa-volume-off"></i>
           <SoundWrap>
