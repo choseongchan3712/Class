@@ -28,6 +28,7 @@ const App = () => {
       {/* <Ex03></Ex03> */}
       {/* <Ex04></Ex04> */}
       <Practice></Practice>
+      {/* 4일차 */}
     </>
   );
 };
