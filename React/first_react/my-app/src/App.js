@@ -6,7 +6,9 @@
 // import Ex03 from "./components/ex03/Ex03";
 // import Ex04 from "./components/ex04/Ex04";
 // import Ex04 from "./components/ex04/Ex04";
-import { Practice } from "./components/ex04/Practice";
+// import { Practice } from "./components/ex04/Practice";
+
+import { Ex05 } from "./components/ex05/Ex05";
 
 const App = () => {
   // return 반드시 존재해야함
@@ -27,8 +29,10 @@ const App = () => {
 
       {/* <Ex03></Ex03> */}
       {/* <Ex04></Ex04> */}
-      <Practice></Practice>
+      {/* <Practice></Practice> */}
       {/* 4일차 */}
+
+      <Ex05></Ex05>
     </>
   );
 };
