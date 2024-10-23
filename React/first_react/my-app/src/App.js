@@ -7,9 +7,9 @@
 // import Ex04 from "./components/ex04/Ex04";
 // import Ex04 from "./components/ex04/Ex04";
 // import { Practice } from "./components/ex04/Practice";
-import { Ex05 } from "./components/ex05/Ex05";
+// import { Ex05 } from "./components/ex05/Ex05";
 
-// import { Ex06 } from "./components/ex06/ex06";
+import { Ex06 } from "./components/ex06/Ex06"
 
 
 const App = () => {
@@ -34,9 +34,9 @@ const App = () => {
       {/* <Practice></Practice> */}
       {/* 4일차 */}
 
-      <Ex05></Ex05>
+      {/* <Ex05></Ex05> */}
       {/* 5일차 */}
-      {/* <Ex06></Ex06> */}
+      <Ex06></Ex06>
     </>
   );
 };
