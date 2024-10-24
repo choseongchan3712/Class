@@ -1,7 +1,7 @@
 import { HashRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import Sub01 from "./pages/Sub01";
-import Sub02 from "./pages/Sub02";
+// import Sub02 from "./pages/Sub02";
 import PageNotFound from "./pages/PageNotFound";
 import Header from "./components/Header";
 
@@ -11,8 +11,10 @@ export const Ex06 = () => {
       <Header></Header>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/sub01" element={<Sub01 />} />
-        <Route path="/sub02" element={<Sub02 />} />
+        <Route path="/sub/:id" element={<Sub01 />} />
+        {/* ":" 라우터 안에서 변수 처리 */}
+        {/* ! 평가에서 링크(경로) 예쁘게 만들것! */}
+        {/* <Route path="/sub02" element={<Sub02 />} /> */}
         <Route path="/*" element={<PageNotFound />}></Route>
       </Routes>
     </HashRouter>

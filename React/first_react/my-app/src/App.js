@@ -9,7 +9,7 @@
 // import { Practice } from "./components/ex04/Practice";
 // import { Ex05 } from "./components/ex05/Ex05";
 
-import { Ex06 } from "./components/ex06/Ex06"
+import { Ex06 } from "./components/ex06/Ex06";
 
 
 const App = () => {
