@@ -9,7 +9,9 @@
 // import { Practice } from "./components/ex04/Practice";
 // import { Ex05 } from "./components/ex05/Ex05";
 
-import { Ex06 } from "./components/ex06/Ex06";
+import Ex07 from "./components/ex07/Ex07";
+
+// import { Ex06 } from "./components/ex06/Ex06";
 
 
 const App = () => {
@@ -36,7 +38,8 @@ const App = () => {
 
       {/* <Ex05></Ex05> */}
       {/* 5일차 */}
-      <Ex06></Ex06>
+      {/* <Ex06></Ex06> */}
+      <Ex07></Ex07>
     </>
   );
 };
